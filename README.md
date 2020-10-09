@@ -11,7 +11,7 @@ This Project was to create a website for Mrs. Claire's salon so she could track 
 
  -->
 ### Specs
-| Spec | 
+| Spec | |  |
 | :-------------     | :------------- | :------------- |
 |  1.  Create Stylist and Client Classes | ... | ... |
 |  2.  Build Stylist Controllers for Index, Create, Delete, Details, Edit | ... | ... |
