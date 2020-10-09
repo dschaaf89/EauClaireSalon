@@ -2,6 +2,7 @@
   Layout = "_Layout";
 }
 @model HairSalon.Models.Stylist
+@using HairSalon.Models
 
 <p>Issue Details</p>
 <table class="set-table">
@@ -13,3 +14,21 @@
     <td>@Html.DisplayNameFor(model => model.Details):</td>
     <td>@Html.DisplayFor(model => model.Details)</td>
   </tr>
+</table>
+<br>
+<div class="box">
+  <div class="inner-box">
+    @if (@Model.Clients.Count == 0)
+    {
+      <p>No Clients have been added yet!</p>
+    } 
+    @foreach ( Client client in Model.Clients)
+    {
+      <li>@Html.ActionLink($"{client.Name}", "Details", "Client", new { id = client.ClientId})</li>
+    }
+  </div>
+</div>
+
+<p>@Html.ActionLink("Back to Stylist List", "Index")</p>
+<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
