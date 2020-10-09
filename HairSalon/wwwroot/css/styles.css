@@ -1,9 +1,10 @@
 body{
-  background-color: palevioletred;
+  background-color:rgb(241, 179, 233)
+  ;
 }
 
 .jumbotron{
-  background: rgb(243, 165, 239);
+  background: rgb(229, 133, 225);
   text-align: center;
 }
 
@@ -25,5 +26,4 @@ div#footer {
 .p{
   margin-bottom: 5%;
 }
-
 
