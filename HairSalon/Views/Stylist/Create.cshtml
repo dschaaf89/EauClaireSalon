@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+@model HairSalon.Models.Stylist
+
+<h3>Add a New Stylist</h3>
+@using(Html.BeginForm())
+{ 
+  <table class="set-table">
+    <tr>
+      <td>@Html.LabelFor(model => model.Name)</td>
+      <td>@Html.TextBoxFor(model => model.Name, new { @required = "required"})</td>
+    </tr>
+    <tr>
+      <td>@Html.LabelFor(model => model.Details)</td>
+      <td>@Html.TextAreaFor(model => model.Details, new { @class="big-input"})</td>
+    </tr>
+    </table>
+     <input type="submit" value="Add new issue" class="btn btn-default" />
+}
+<p>@Html.ActionLink("Show all Stylist", "Index")</p>
