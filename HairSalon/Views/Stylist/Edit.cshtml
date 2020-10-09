@@ -3,9 +3,10 @@
 }
 @model HairSalon.Models.Stylist
 
-<h3>Add a New Stylist</h3>
+<h3>Edit Stylist</h3>
 @using(Html.BeginForm())
 { 
+  @Html.HiddenFor(model => model.StylistId)
   <table class="set-table">
     <tr>
       <td>@Html.LabelFor(model => model.Name)</td>

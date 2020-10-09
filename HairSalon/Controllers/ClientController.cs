@@ -39,36 +39,17 @@ namespace HairSalon.Controllers
     }
     public ActionResult Edit(int id)
     {
-      var thisClient = _db.Clients.FirstOrDefault(Client => Client.ClientId == id);
-      return View(thisClient);
+        var thisClient = _db.Clients.FirstOrDefault(Client => Client.ClientId == id);
+        return View(thisClient);
     }
-    [HttpPost]
+     [HttpPost]
     public ActionResult Edit(Client client)
     {
       _db.Entry(client).State = EntityState.Modified;
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
-    public ActionResult Delete(int id)
-    {
-      var thisClient = _db.Clients.FirstOrDefault(Client => Client.ClientId == id);
-      return View(thisClient);
-    }
-    [HttpPost, ActionName("Delete")]
-    public ActionResult DeleteConfirmed(int id)
-    {
-      var thisClient = _db.Clients.FirstOrDefault(Client => Client.ClientId == id);
-      _db.Clients.Remove(thisClient);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
-    [HttpPost]
-    public ActionResult Search(string search)
-    {
-      List<Client> searchList = _db.Clients.Include(Client => Client.Stylist).ToList();
-      List<Client> model = Client.Search(searchList, search);
-      return View(model);
-    }
-  }
 
+   
+}
 }
