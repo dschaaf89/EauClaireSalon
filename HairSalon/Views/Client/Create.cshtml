@@ -15,6 +15,10 @@
       <td>@Html.LabelFor(model => model.Description)</td>
       <td>@Html.TextAreaFor(model => model.Description, new { @class="big-input"})</td>
     </tr>
+    <tr>
+      <td>@Html.LabelFor(model => model.Stylist)</td>
+      <td>@Html.DropDownList("StylistId")</td>
+    </tr>
 </table>
   <input type="submit" value="Add new Client" class="btn btn-default" />
   }
