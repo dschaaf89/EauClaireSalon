@@ -13,14 +13,14 @@ This Project was to create a website for Mrs. Claire's salon so she could track 
 ### Specs
 | Spec | |  |
 | :-------------     | :------------- | :------------- |
-|  1.  Create Stylist and Client Classes | ... | ... |
-|  2.  Build Stylist Controllers for Index, Create, Delete, Details, Edit | ... | ... |
-|  3.  Build Client Controllers for Index, Create, Delete, Details, and Edit | ... | ... |
-|  4.  Build Home Controllers for Index | ... | ... |
-|  5.  Build Home Views for Index | ... | ... |
-|  6.  Build Client Views for Index, Create, Delete, Details, Edit | ... | ... |
-|  7.  Add Links to Clients Class and HTML | ... | ... |
-|  8.  Add CSS and Styling | ... | ... |
+|  1.  Create Stylist and Client Classes | | |
+|  2.  Build Stylist Controllers for Index, Create, Delete, Details, Edit |  |  |
+|  3.  Build Client Controllers for Index, Create, Delete, Details, and Edit | ||
+|  4.  Build Home Controllers for Index |  |  |
+|  5.  Build Home Views for Index |  |  |
+|  6.  Build Client Views for Index, Create, Delete, Details, Edit | |  |
+|  7.  Add Links to Clients Class and HTML |  |  |
+|  8.  Add CSS and Styling |  |  |
 
 
 ## Setup/Installation Requirements
